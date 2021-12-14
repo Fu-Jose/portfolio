@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
+import "boxicons/css/boxicons.css";
 
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";

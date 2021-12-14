@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Particles from "react-tsparticles";
+// import avatar from "../public/avatar";
+// import Image from "next/image";
 
 export default function Home() {
   const particlesInit = (main) => {
@@ -19,14 +21,17 @@ export default function Home() {
         <meta name="description" content="Juan Fu Web Developer" />
         <link rel="icon" href="/favicon.ico" />
         {/* <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script> */}
+        <link
+          href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <header className="sticky-top">
         <nav className="navbar navbar-light bg-light">
           <div className="container-fluid justify-content-around">
             <div className="home-btn">
-              <box-icon
-                type="solid"
-                name="home"
+              <i
+                className="bx bxs-home"
                 style={{ verticalAlign: "middle" }}
                 onClick={() => {
                   document
@@ -85,12 +90,12 @@ export default function Home() {
               <div className="text-center my-3">
                 <div>
                   {/* <Image
-                  className="avatar"
-                  src={avatar}
-                  alt="picture of Juan"
-                  width={120}
-                  height={120}
-                /> */}
+                    className="avatar"
+                    src={avatar}
+                    alt="picture of Juan"
+                    width={120}
+                    height={120}
+                  /> */}
                   <img
                     className="avatar"
                     src="https://res.cloudinary.com/donxjonx/image/upload/v1637598838/foto3_ykzrmv.jpg"
@@ -98,11 +103,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="my-3 text-center">
-                <h5>Hi! My name is Juan and I'm a MERN Developer.</h5>
+                <h5>Hi! My name is Juan and I am a MERN Developer.</h5>
               </div>
               <div className="my-3 mx-lg-5">
                 <span>
-                  Sometimes a client's request may sound like a puzzle or
+                  Sometimes a clients request may sound like a puzzle or
                   gibberish. I play chess and speak four languages. <br />
                   Currently working on the online presence of a South-American
                   textile importer.
@@ -114,13 +119,13 @@ export default function Home() {
             <div className="d-flex flex-column align-self-center">
               <div className="d-flex my-2">
                 <div className="align-self-center">
-                  <box-icon name="world" />
+                  <i className="bx bx-world" />
                 </div>
                 <span className="mx-2">- Rome, Italy</span>
               </div>
               <div className="d-flex my-2">
                 <div className="align-self-center">
-                  <box-icon name="user-voice" />
+                  <i className="bx bx-user-voice" />
                 </div>
                 <span className="mx-2">
                   - Fluent in: Spanish, English and Italian. <br />- Working on:
@@ -129,7 +134,7 @@ export default function Home() {
               </div>
               <div className="d-flex my-2">
                 <div className="align-self-center">
-                  <box-icon type="solid" name="school"></box-icon>
+                  <i className="bx bxs-school" />
                 </div>
                 <span className="mx-2">
                   - Liceo Scientifico Applied Sciences
@@ -184,6 +189,7 @@ export default function Home() {
                   className="btn btn-light"
                   href="https://cavalierisuits.herokuapp.com/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   DEMO
                 </a>
