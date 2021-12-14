@@ -2,14 +2,21 @@ html,
 body {
   padding: 0;
   margin: 0;
+  min-width: fit-content;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
 }
-/* 
-body {
-  display: flex;
-} */
+
+header,
+section {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  min-height: calc(100vh - 54px) !important;
+}
 
 a {
   color: inherit;
@@ -18,4 +25,69 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.avatar {
+  width: 120px !important;
+  border: 3px solid rgb(170, 170, 170) !important;
+  border-radius: 50% !important;
+}
+
+.figure {
+  position: relative;
+  max-width: 100%;
+}
+
+.figure div.img-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.figure:hover div.img-hover {
+  background-color: black;
+  opacity: 0.2;
+}
+
+.button-hover {
+  display: none;
+}
+
+div:hover > div > .button-hover {
+  display: inline-flex;
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-animation: color-change-2x 0.5s linear alternate forwards;
+  animation: color-change-2x 0.5s linear alternate forwards;
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #ffffff;
+    color: #000000;
+  }
+  100% {
+    background: #000000;
+    color: #ffffff;
+  }
 }
