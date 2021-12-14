@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "15.x"
+  },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
     "dev": "next dev",
