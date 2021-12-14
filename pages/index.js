@@ -18,7 +18,7 @@ export default function Home() {
         <title>Juan Fu Web Developer</title>
         <meta name="description" content="Juan Fu Web Developer" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+        {/* <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script> */}
       </Head>
       <header className="sticky-top">
         <nav className="navbar navbar-light bg-light">
