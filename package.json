@@ -6,7 +6,6 @@
     "node": "15.x"
   },
   "scripts": {
-    "heroku-prebuild": "npm install -g serve",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
